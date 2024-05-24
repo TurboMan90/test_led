@@ -576,11 +576,18 @@ void WLED::initAP(bool resetAP)
   }
   DEBUG_PRINT(F("Opening access point "));
   DEBUG_PRINTLN(apSSID);
-  WiFi.softAPConfig(IPAddress(4, 3, 2, 1), IPAddress(4, 3, 2, 1), IPAddress(255, 255, 255, 0));
-  WiFi.softAP(apSSID, apPass, apChannel, apHide);
-  #if defined(LOLIN_WIFI_FIX) && (defined(ARDUINO_ARCH_ESP32C3) || defined(ARDUINO_ARCH_ESP32S2) || defined(ARDUINO_ARCH_ESP32S3))
-  WiFi.setTxPower(WIFI_POWER_8_5dBm);
-  #endif
+  const char* customSSID = "MyCustomWLED";      // Custom SSID
+const char* customPass = "custompass123";     // Custom Password
+int customChannel = 1;                        // Custom WiFi Channel (you can adjust this as needed)
+bool customHide = false;                      // AP Visibility (false means visible)
+
+WiFi.softAPConfig(IPAddress(192, 168, 4, 1), IPAddress(192, 168, 4, 1), IPAddress(255, 255, 255, 0)); // Custom IP settings
+WiFi.softAP(customSSID, customPass, customChannel, customHide); // Start AP with custom settings
+
+#if defined(LOLIN_WIFI_FIX) && (defined(ARDUINO_ARCH_ESP32C3) || defined(ARDUINO_ARCH_ESP32S2) || defined(ARDUINO_ARCH_ESP32S3))
+WiFi.setTxPower(WIFI_POWER_8_5dBm);
+#endif
+
 
   if (!apActive) // start captive portal if AP active
   {
