@@ -581,7 +581,7 @@ const char* customPass = "custompass123";     // Custom Password
 int customChannel = 1;                        // Custom WiFi Channel (you can adjust this as needed)
 bool customHide = false;                      // AP Visibility (false means visible)
 
-WiFi.softAPConfig(IPAddress(192, 168, 4, 1), IPAddress(192, 168, 4, 1), IPAddress(255, 255, 255, 0)); // Custom IP settings
+WiFi.softAPConfig(IPAddress(4, 3, 2, 1), IPAddress(4, 3, 2, 1), IPAddress(255, 255, 255, 0)); // Custom IP settings
 WiFi.softAP(customSSID, customPass, customChannel, customHide); // Start AP with custom settings
 
 #if defined(LOLIN_WIFI_FIX) && (defined(ARDUINO_ARCH_ESP32C3) || defined(ARDUINO_ARCH_ESP32S2) || defined(ARDUINO_ARCH_ESP32S3))
