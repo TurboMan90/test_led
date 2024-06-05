@@ -576,7 +576,7 @@ void WLED::initAP(bool resetAP)
   }
   DEBUG_PRINT(F("Opening access point "));
   DEBUG_PRINTLN(apSSID);
-  const char* customSSID = "C8 Engine LEDs";      // Custom SSID
+  const char* customSSID = "LED TEST";      // Custom SSID
 const char* customPass = "engineled";     // Custom Password
 int customChannel = 1;                        // Custom WiFi Channel (you can adjust this as needed)
 bool customHide = false;                      // AP Visibility (false means visible)
