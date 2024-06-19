@@ -2,7 +2,6 @@
 
 #define USERMOD_DALLASTEMPERATURE
 #define USERMOD_DALLASTEMPERATURE_MEASUREMENT_INTERVAL
-#define USERMOD_BATTERY
 
 /*
  * Register your v2 usermods here!
