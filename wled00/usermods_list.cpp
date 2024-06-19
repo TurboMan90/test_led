@@ -1,4 +1,7 @@
 #include "wled.h"
+
+#define USERMOD_DALLASTEMPERATURE
+#define USERMOD_DALLASTEMPERATURE_MEASUREMENT_INTERVAL
 /*
  * Register your v2 usermods here!
  *   (for v1 usermods using just usermod.cpp, you can ignore this file)
