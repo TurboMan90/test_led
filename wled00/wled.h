@@ -11,7 +11,7 @@
 #define VERSION 2405180
 
 //uncomment this if you have a "my_config.h" file you'd like to use
-//#define WLED_USE_MY_CONFIG
+#define WLED_USE_MY_CONFIG
 
 // ESP8266-01 (blue) got too little storage space to work with WLED. 0.10.2 is the last release supporting this unit.
 
@@ -269,7 +269,7 @@ using PSRAMDynamicJsonDocument = BasicJsonDocument<PSRAM_Allocator>;
 // Global Variable definitions
 WLED_GLOBAL char versionString[] _INIT(TOSTRING(WLED_VERSION));
 WLED_GLOBAL char releaseString[] _INIT_PROGMEM(TOSTRING(WLED_RELEASE_NAME)); // somehow this will not work if using "const char releaseString[]
-#define WLED_CODENAME "Kōsen"
+#define WLED_CODENAME "0.15.0-b3"
 
 // AP and OTA default passwords (for maximum security change them!)
 WLED_GLOBAL char apPass[65]  _INIT(WLED_AP_PASS);
