@@ -219,11 +219,11 @@ using PSRAMDynamicJsonDocument = BasicJsonDocument<PSRAM_Allocator>;
   Comment out this error message to build regardless.
 #endif
 
-#ifndef WLED_DISABLE_INFRARED
-  #include <IRremoteESP8266.h>
-  #include <IRrecv.h>
-  #include <IRutils.h>
-#endif
+// #ifndef WLED_DISABLE_INFRARED
+//   #include <IRremoteESP8266.h>
+//   #include <IRrecv.h>
+//   #include <IRutils.h>
+// #endif
 
 //Filesystem to use for preset and config files. SPIFFS or LittleFS on ESP8266, SPIFFS only on ESP32 (now using LITTLEFS port by lorol)
 #ifdef ESP8266
@@ -269,7 +269,7 @@ using PSRAMDynamicJsonDocument = BasicJsonDocument<PSRAM_Allocator>;
 // Global Variable definitions
 WLED_GLOBAL char versionString[] _INIT(TOSTRING(WLED_VERSION));
 WLED_GLOBAL char releaseString[] _INIT_PROGMEM(TOSTRING(WLED_RELEASE_NAME)); // somehow this will not work if using "const char releaseString[]
-#define WLED_CODENAME "0.15.0-b3"
+#define WLED_CODENAME "0.15.0-b5"
 
 // AP and OTA default passwords (for maximum security change them!)
 WLED_GLOBAL char apPass[65]  _INIT(WLED_AP_PASS);

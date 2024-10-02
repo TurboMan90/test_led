@@ -105,6 +105,8 @@
 		<div class="helpB"><button type="button" onclick="H()">?</button></div>
 		<button type="button" onclick="B()">Back</button><button type="submit">Save</button><hr>
 		</div>
+		<div style="color: red; font-size: 24px;">&#9888; DO NOT EDIT SETTINGS WITHOUT FIRST CONTACTING INFO@BOOSTEDLIGHTINGSOLUTIONS.COM!</div><br>
+
 		<h2>Security & Update setup</h2>
 		Settings PIN: <input type="password" id="PIN" name="PIN" size="4" maxlength="4" minlength="4" onkeydown="checkNum(this)" pattern="[0-9]*" inputmode="numeric" title="Please enter a 4 digit number"><br>
 		<div class="warn">&#9888; Unencrypted transmission. Be prudent when selecting PIN, do NOT use your banking, door, SIM, etc. pin!</div><br>
@@ -133,9 +135,8 @@
 		<div>Restore configuration<br><input type="file" name="data2" accept=".json"> <button type="button" onclick="uploadFile(d.Sf.data2,'/cfg.json');">Upload</button><br></div>
 		<hr>
 		<h3>About</h3>
-		<a href="https://github.com/Aircoookie/WLED/" target="_blank">BLS</a>&#32;version 1.03-4 ##VERSION##<!-- Autoreplaced from package.json --><br><br>
-		<!--<a href="https://github.com/Aircoookie/WLED/wiki/Contributors-and-credits" target="_blank">Contributors, dependencies and special thanks</a><br> -->
-		BLS Version 1.03-4<br><br>
+		A very special thanks to all who contributed to WLED that made this app possible!<br><br>
+		<a href="https://github.com/Aircoookie/WLED/wiki/Contributors-and-credits" target="_blank">Contributors, dependencies and special thanks</a><br>
 		(c) 2016-2024 Christian Schwinne <br>
 		<i>Licensed under the <a href="https://github.com/Aircoookie/WLED/blob/master/LICENSE" target="_blank">MIT license</a></i><br><br>
 		<!--Server message: <span class="sip"> Response error! </span><hr> -->

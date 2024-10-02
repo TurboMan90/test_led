@@ -18,7 +18,7 @@
 // -D WLED_BRAND="\"Custom Brand\""
 // -D WLED_PRODUCT_NAME="\"Custom Product\""
 #ifndef WLED_BRAND
-  #define WLED_BRAND "WLED"
+  #define WLED_BRAND "BLS"
 #endif
 #ifndef WLED_PRODUCT_NAME
   #define WLED_PRODUCT_NAME "FOSS"
@@ -573,13 +573,13 @@
     #define DEFAULT_LED_PIN 1
     #warning "Compiling with DMX. The default LED pin has been changed to pin 1."
   #else
-    #define DEFAULT_LED_PIN 2    // GPIO2 (D4) on Wemos D1 mini compatible boards, safe to use on any board
+    #define DEFAULT_LED_PIN 8    // GPIO2 (D4) on Wemos D1 mini compatible boards, safe to use on any board
   #endif
 #else
   #define DEFAULT_LED_PIN 16   // aligns with GPIO2 (D4) on Wemos D1 mini32 compatible boards (if it is unusable it will be reassigned in WS2812FX::finalizeInit())
 #endif
-#define DEFAULT_LED_TYPE TYPE_WS2812_RGB
-#define DEFAULT_LED_COUNT 30
+#define DEFAULT_LED_TYPE TYPE_SK6812_RGBW
+#define DEFAULT_LED_COUNT 1
 
 #define INTERFACE_UPDATE_COOLDOWN 1000 // time in ms to wait between websockets, alexa, and MQTT updates
 

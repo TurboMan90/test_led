@@ -1,0 +1,13 @@
+Settings:
+-remove 2D Configuration
+-remove Time and Macros
+-remove Usermods
+-add settings pin code
+
+WIFI:
+-delete experimental
+-add static IP
+
+
+Usermods:
+-add battery
