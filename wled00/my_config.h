@@ -1,8 +1,8 @@
 #pragma once
 
 
-#define CLIENT_SSID "BoilerUp"
-#define CLIENT_PASS "Goirish90"
+#define CLIENT_SSID ""
+#define CLIENT_PASS ""
 
 //*USE PACKAGE.JSON TO CHANGE VERSION NUMBER, wled.h line 272 WLED_CODENAME for WLED version*/
 
