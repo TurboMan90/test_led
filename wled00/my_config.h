@@ -8,7 +8,8 @@
 
 #define WLED_DISABLE_IR
 
-
+#define USERMOD_BATTERY_12V_TOTAL_CAPACITY 80000  // For an 80Ah battery (80000mAh)
+#define USERMOD_BATTERY_MEASUREMENT_PIN 3
 
 //#define MAX_LEDS 1500       // Maximum total LEDs. More than 1500 might create a low memory situation on ESP8266.
 //#define MDNS_NAME "wled"    // mDNS hostname, ie: *.local
