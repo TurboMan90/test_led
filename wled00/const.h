@@ -27,8 +27,8 @@
 //Defaults
 #define DEFAULT_CLIENT_SSID "Your_Network"
 #define DEFAULT_AP_SSID     WLED_BRAND "-AP"
-#define DEFAULT_AP_PASS     "wled1234"
-#define DEFAULT_OTA_PASS    "wledota"
+#define DEFAULT_AP_PASS     "bls1234"
+#define DEFAULT_OTA_PASS    "blsota"
 #define DEFAULT_MDNS_NAME   "x"
 
 //increase if you need more
@@ -573,13 +573,13 @@
     #define DEFAULT_LED_PIN 1
     #warning "Compiling with DMX. The default LED pin has been changed to pin 1."
   #else
-    #define DEFAULT_LED_PIN 8    // GPIO2 (D4) on Wemos D1 mini compatible boards, safe to use on any board
+    #define DEFAULT_LED_PIN 2    // GPIO2 (D4) on Wemos D1 mini compatible boards, safe to use on any board
   #endif
 #else
   #define DEFAULT_LED_PIN 16   // aligns with GPIO2 (D4) on Wemos D1 mini32 compatible boards (if it is unusable it will be reassigned in WS2812FX::finalizeInit())
 #endif
 #define DEFAULT_LED_TYPE TYPE_SK6812_RGBW
-#define DEFAULT_LED_COUNT 1
+#define DEFAULT_LED_COUNT 16
 
 #define INTERFACE_UPDATE_COOLDOWN 1000 // time in ms to wait between websockets, alexa, and MQTT updates
 

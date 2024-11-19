@@ -107,7 +107,7 @@ bool deserializeConfig(JsonObject doc, bool fromFS) {
   // initialize LED pins and lengths prior to other HW (except for ethernet)
   JsonObject hw_led = hw["led"];
 
-  uint16_t total = hw_led[F("total")] | strip.getLengthTotal();
+   uint16_t total = hw_led[F("total")] | strip.getLengthTotal();
   uint16_t ablMilliampsMax = hw_led[F("maxpwr")] | BusManager::ablMilliampsMax();
   BusManager::setMilliampsMax(ablMilliampsMax);
   Bus::setGlobalAWMode(hw_led[F("rgbwm")] | AW_GLOBAL_DISABLED);
